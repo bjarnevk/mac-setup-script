@@ -8,8 +8,11 @@ brews=(
   coreutils
   dfc
   findutils
+  fpp
+  fzf
   git
   git-extras
+  go
   htop
   httpie
   mackup
@@ -20,6 +23,7 @@ brews=(
   postgresql
   pgcli
   python
+  python3
   ruby
   scala
   sbt
@@ -89,6 +93,8 @@ npms=(
   coffee-script
   fenix-cli
   gitjk
+  kill-tabs
+  wifi-password
 )
 
 clibs=(
@@ -96,7 +102,6 @@ clibs=(
 )
 
 bkpgs=(
-  rauchg/wifi-password
 )
 
 git_configs=(
@@ -112,6 +117,7 @@ apms=(
   circle-ci
   markdown-preview
   minimap
+  nuclide-installer
   language-coffee-script
   language-gfm
   language-html
@@ -196,7 +202,7 @@ install 'pip install' ${pips[@]}
 install 'gem install' ${gems[@]}
 install 'clib install' ${clibs[@]}
 install 'bpkg install' ${bpkgs[@]}
-install 'npm install -g' ${npms[@]}
+install 'npm install -global' ${npms[@]}
 install 'apm install' ${apms[@]}
 install 'brew cask install' ${fonts[@]}
 
